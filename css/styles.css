@@ -60,7 +60,7 @@ p {
 /* index style */
 
 
-.header__item {
+/* .header__item {
     margin-right: 93px;
     font-weight: bold;
     font-size: 24px;
@@ -178,7 +178,7 @@ p {
 
 .header-contact__phone:hover {
     fill: var(--blue);
-}
+} */
 
 
 .service-heading__background-photo {
@@ -239,7 +239,7 @@ p {
     color: var(--darkfooter)
 }
 
-
+/* 
 
 .backdrop {
     z-index: 1;
@@ -394,7 +394,7 @@ p {
 .cookies__link {
     text-decoration: underline;
     color: var(--blue)
-}
+} */
 
 .index {
     margin-top: 94px;
@@ -601,7 +601,7 @@ p {
     fill: var(--blue);
 }
 
-.footer {
+/* .footer {
     padding-left: 50px;
     height: 300px;
     width: auto; 
@@ -730,7 +730,7 @@ p {
     color: var(--white);
     align-items: baseline;
     border-radius: 5px;
-}
+} */
 
 
 /* Portfolio-styles */
