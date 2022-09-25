@@ -1,0 +1,57 @@
+.service-heading__background-photo {
+    height: 600px;
+    width: auto;
+    background-image: url(../images/zdjęciewtle.jpg);
+    background-size: cover;
+}
+
+
+.service-heading {
+    margin-top: 200px;
+    margin-bottom: 30px;
+    font-size: 44px;
+    text-align: center;
+}
+
+
+.service-heading__item {
+    color: var(--lightgray);
+    text-align: center;
+}
+
+.service-heading__button {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--blue);
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+
+.service-heading__button:hover {
+    width: 200px;
+    height: 50px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+
+.service-heading__button-text {
+    color: var(--lightgray);
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+
+.service-heading__button-text:hover {
+    color: var(--darkfooter)
+}
