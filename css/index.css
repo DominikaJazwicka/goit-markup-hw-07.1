@@ -324,7 +324,6 @@ p {
   font-size: 44px;
   text-align: center;
 }
-
 .service-heading__item {
   color: #F5F4FA;
   text-align: center;
@@ -342,7 +341,6 @@ p {
   border-radius: 5px;
   transition-duration: 0.5s;
 }
-
 .service-heading__button:hover {
   width: 200px;
   height: 50px;
@@ -359,16 +357,18 @@ p {
   text-align: center;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
 .service-heading__button-text:hover {
   color: #2f303a;
 }
 
 .footer {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 50px;
-  height: 300px;
+  max-height: 300px;
+  height: auto;
   width: auto;
-  background-color: #2f303a;
+  background-color: var(--darkfooter);
   justify-content: flex-start;
 }
 
@@ -381,7 +381,7 @@ p {
 }
 
 .footer__list {
-  color: #ffffff;
+  color: var(--white);
   justify-content: flex-start;
 }
 
@@ -392,7 +392,7 @@ p {
 .footer__join-us {
   justify-content: flex-start;
   display: flex;
-  color: #ffffff;
+  color: var(--white);
   margin-left: 20px;
 }
 
@@ -418,13 +418,13 @@ p {
 }
 
 .footer-social-media__circle:hover {
-  background-color: #000000;
+  background-color: #2196f3;
   fill: #ffffff;
   cursor: pointer;
 }
 
 .footer-social-media__icon {
-  fill: #AFB1B8;
+  fill: var(--grey);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -451,6 +451,7 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 5px;
   margin-left: 78px;
+  background-color: #2196f3;
   border: solid 2px;
   border-color: #ffffff;
   color: #ffffff;
@@ -466,7 +467,7 @@ p {
 }
 
 .footer__text {
-  color: #000000;
+  color: #2196f3;
 }
 
 .join-us {
@@ -486,7 +487,7 @@ p {
 .footer__button {
   height: 50px;
   width: 200px;
-  background-color: #000000;
+  background-color: #2196f3;
   border: none;
   font-size: 16px;
   font-weight: bold;
@@ -503,7 +504,7 @@ p {
   margin-bottom: 50px;
 }
 
-.button__item {
+.buttons__item {
   transition-duration: 0.5s;
   display: inline;
   width: 114px;
@@ -516,12 +517,10 @@ p {
   border-radius: 5px;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.button__item:focus {
-  color: var(--blue);
+.buttons__item:focus {
+  color: #2196f3;
 }
-
-.button__item:hover {
+.buttons__item:hover {
   width: 121px;
   height: 38px;
   cursor: pointer;
@@ -546,7 +545,6 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .portfolio__card {
   margin-left: 15px;
   margin-right: 15px;
@@ -583,7 +581,6 @@ p {
   transform: translateY(100%);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
 .portfolio__overlay > p {
   color: #ffffff;
   font-size: 16px;

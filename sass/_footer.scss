@@ -7,13 +7,14 @@ $greyColor: #AFB1B8;
 $darkgreyColor: #757575;
 $whitetransColor: #ffffff99;
 $lightgrayColor: #F5F4FA;
-
-
 .footer {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 50px;
-    height: 300px;
+    max-height: 300px;
+    height: auto;
     width: auto; 
-    background-color: $darkfooterColor;
+    background-color: var(--darkfooter);
     justify-content: flex-start;
 }
 
@@ -26,7 +27,7 @@ $lightgrayColor: #F5F4FA;
 }
 
 .footer__list {
-    color: $whiteColor;
+    color: var(--white);
     justify-content: flex-start
 }
 
@@ -38,7 +39,7 @@ $lightgrayColor: #F5F4FA;
  .footer__join-us {
     justify-content: flex-start;
     display: flex;
-    color: $whiteColor;
+    color: var(--white);
     margin-left: 20px;
 }
 
@@ -62,13 +63,13 @@ $lightgrayColor: #F5F4FA;
 .footer-social-media__circle:hover svg { fill: $whiteColor }
 
 .footer-social-media__circle:hover {
-    background-color: $blackColor;
+    background-color: $blueColor;
     fill: $whiteColor;
     cursor: pointer;
 }
 
 .footer-social-media__icon {
-    fill: $greyColor;
+    fill: var(--grey);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -95,6 +96,7 @@ $lightgrayColor: #F5F4FA;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     margin-left: 78px;
+    background-color: $blueColor;
     border: solid 2px;
     border-color: $whiteColor;
     color: $whiteColor;
@@ -110,7 +112,7 @@ $lightgrayColor: #F5F4FA;
 }
 
 .footer__text {
-    color: $blackColor;
+    color: $blueColor;
 }
 
 .join-us {
@@ -130,11 +132,12 @@ $lightgrayColor: #F5F4FA;
 .footer__button {
     height: 50px;
     width: 200px;
-    background-color: $blackColor;
+    background-color: $blueColor;
     border: none;
     font-size: 16px;
     font-weight: bold;
     color: var(--white);
     align-items: baseline;
     border-radius: 5px;
-}
+} 
+

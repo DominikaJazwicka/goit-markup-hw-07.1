@@ -17,7 +17,7 @@ $lightgrayColor: #F5F4FA;
     margin-bottom: 50px;
 }
 
-&__item {
+.buttons__item {
     transition-duration: 0.5s;
     display: inline;
     width: 114px;
@@ -29,11 +29,12 @@ $lightgrayColor: #F5F4FA;
     border: none;
     border-radius: 5px;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+
+&:focus {
+    color: $blueColor;
 }
 
-.button__item:focus {
-    color: var(--blue);
-}
 
 &:hover {
     width: 121px;
@@ -51,6 +52,7 @@ $lightgrayColor: #F5F4FA;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+}
 
 .button-list__element {
     padding: 10px;
@@ -60,7 +62,7 @@ $lightgrayColor: #F5F4FA;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+
 
 &__card {
     margin-left: 15px;
@@ -70,13 +72,16 @@ $lightgrayColor: #F5F4FA;
     border: 1px solid;
     border-color: $whiteColor;
 }
+}
 
-&:hover {
+
+.portfolio__card:hover {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
+
 
   .portfolio__box {
     overflow: hidden;
@@ -98,13 +103,14 @@ $lightgrayColor: #F5F4FA;
     opacity: 90%;
     transform: translateY(100%);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
+
 
 & > p {
     color: $whiteColor;
     font-size: 16px;
     padding-left: 24px;
     padding-top: 50px;
+}
 }
 
 .portfolio__box:hover .portfolio__overlay {
