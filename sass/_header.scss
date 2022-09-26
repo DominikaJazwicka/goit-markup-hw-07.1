@@ -14,18 +14,18 @@ $lightgrayColor: #F5F4FA;
     font-weight: bold;
     font-size: 24px;
     color: $blackColor;
-}
 
-.header__item     :hover {
+&:hover {
     color: $blueColor;
+}
 }
 
 .header__link {
     color: $blueColor;
-}
 
-.header__link:hover {
+&:hover {
     color: $blackColor;
+}
 }
 
 
@@ -55,9 +55,9 @@ $lightgrayColor: #F5F4FA;
     transition: 250ms color $greyColor;
     color: #2196F3;
     margin-top: 30px;
-}
 
-.header__active:after {
+
+&:after {
     position: relative;
     display: block;
     content: "";
@@ -67,23 +67,22 @@ $lightgrayColor: #F5F4FA;
     width: 100%;
     height: 3px;
     background-color: $blueColor;
-
+}
 }
 
 .header-contact {
     padding-left: 250px;
     display: flex;
     flex-wrap: wrap;
-}
 
-
-.header-contact__list {
+&__list {
     align-items: center;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;   
     padding-bottom: 32px;
+}
 }
 
 
@@ -95,10 +94,10 @@ $lightgrayColor: #F5F4FA;
     align-items: center;
     justify-content: center;
     transition-duration: 0.5s;
-}
 
-.header-contact__item:hover {
+&:hover {
     fill: $blueColor;
+}
 }
 
 .header-contact__link {
@@ -106,25 +105,24 @@ $lightgrayColor: #F5F4FA;
     padding-right: 10px;
     align-items: center;
     display: inline-flex;
+
+
+&:hover svg { fill: $blueColor} 
 }
-
-.header-contact__link:hover svg { fill: $blueColor} 
-
 
 .header-contact__email {
     padding-right: 10px;
     fill: $darkgreyColor;
-}
 
-.header-contact__email:hover {
+&:hover {
     fill: $blueColor;
 }
-
+}
 .header-contact__phone {
     padding-right: 10px;
     fill: $greyColor;
-}
 
-.header-contact__phone:hover {
+&:hover {
     fill: $blueColor;
+}
 }

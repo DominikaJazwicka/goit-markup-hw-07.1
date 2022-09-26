@@ -1,4 +1,4 @@
-:root {
+/* /* :root {
     --white: #ffffff;
     --black: #000000;
     --blue: #2196f3;
@@ -454,7 +454,7 @@ p {
     overflow: hidden;
 }
 
-.static-overlay {
+/* .static-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -551,9 +551,9 @@ p {
 .employee-social-media__icon:hover {
     fill: var(--white)
 }
+ */
 
-
-
+/* 
 .customers {
     display: flex;
     flex-wrap: wrap;
@@ -868,17 +868,4 @@ p {
 .portfolio__text {
     margin-left: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
+*/

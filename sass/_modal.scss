@@ -26,14 +26,14 @@ $lightgrayColor: #F5F4FA;
     min-height: 581px;
     transform: translate(-50%, -50%);
     background-color: $whiteColor;
-}
 
-.modal__heading {
+&__heading {
     font-size: 20px;
     text-decoration: bold;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 12px;
+}
 }
 
 .modal__close-btn {
@@ -86,10 +86,10 @@ $lightgrayColor: #F5F4FA;
     border-radius: 5px;
     border-color: $darkgreyColor;
     border: 0.5px solid;
-}
 
-.input-modal:hover {
+&:hover {
     border-color: $blueColor;
+}
 }
 
 .input-modal__svg-username {
@@ -110,11 +110,6 @@ $lightgrayColor: #F5F4FA;
     left: 55px;
 }
 
-.input-modal__coment:hover {
-    cursor: pointer;
-    border-color: $blueColor;
-}
-
 
 .input-modal__coment {
     margin-left: 40px;
@@ -125,6 +120,11 @@ $lightgrayColor: #F5F4FA;
     border-radius: 5px;
     border-color: $greyColor;
     border: 0.5px solid;
+
+&:hover {
+    cursor: pointer;
+    border-color: $blueColor;
+}
 }
 
 .button-modal:hover {
@@ -152,13 +152,13 @@ $lightgrayColor: #F5F4FA;
 .cookies {
     margin-left: 50px;
     margin-top: 20px;
-}
 
-.cookies__text {
+&__text {
     font-size: 14px;
 }
 
-.cookies__link {
+&__link {
     text-decoration: underline;
-    color: var(--blue)
+    color: $blueColor;
+}
 }
