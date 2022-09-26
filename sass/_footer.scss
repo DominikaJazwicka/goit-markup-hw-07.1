@@ -1,8 +1,19 @@
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$blueColor: #2196f3;
+$darkColor: #212121;
+$darkfooterColor: #2f303a;
+$greyColor: #AFB1B8;
+$darkgreyColor: #757575;
+$whitetransColor: #ffffff99;
+$lightgrayColor: #F5F4FA;
+
+
 .footer {
     padding-left: 50px;
     height: 300px;
     width: auto; 
-    background-color: var(--darkfooter);
+    background-color: $darkfooterColor;
     justify-content: flex-start;
 }
 
@@ -15,7 +26,7 @@
 }
 
 .footer__list {
-    color: var(--white);
+    color: $whiteColor;
     justify-content: flex-start
 }
 
@@ -27,7 +38,7 @@
  .footer__join-us {
     justify-content: flex-start;
     display: flex;
-    color: var(--white);
+    color: $whiteColor;
     margin-left: 20px;
 }
 
@@ -48,27 +59,27 @@
     transition-duration: 0.5s;
 }
 
-.footer-social-media__circle:hover svg { fill: var(--white) }
+.footer-social-media__circle:hover svg { fill: $whiteColor }
 
 .footer-social-media__circle:hover {
-    background-color: var(--blue);
-    fill: var(--white);
+    background-color: $blackColor;
+    fill: $whiteColor;
     cursor: pointer;
 }
 
 .footer-social-media__icon {
-    fill: var(--grey);
+    fill: $greyColor;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .footer-social-media__icon:hover {
-    fill: var(--white)
+    fill: $whiteColor;
 }
 
 .footer__newsletter {
     justify-content: flex-start;
     display: flex;
-    color: var(--white);
+    color: $whiteColor;
     margin-left: 20px;
 }
 
@@ -84,10 +95,9 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     margin-left: 78px;
-    background-color: var(--background-color);
     border: solid 2px;
-    border-color: var(--white);
-    color: var(--white);
+    border-color: $whiteColor;
+    color: $whiteColor;
     padding-left: 16px;
     font-size: 16px;
     line-height: 1.25;
@@ -100,17 +110,17 @@
 }
 
 .footer__text {
-    color: var(--blue);
+    color: $blackColor;
 }
 
 .join-us {
     padding: 15px;
     font-size: 16px;
-    color: var(--white);
+    color: $whiteColor;
 }
 
 .footer__link {
-    color: var(--white);
+    color: $whiteColor;
 }
 
 .newsletter {
@@ -120,7 +130,7 @@
 .footer__button {
     height: 50px;
     width: 200px;
-    background-color: var(--blue);
+    background-color: $blackColor;
     border: none;
     font-size: 16px;
     font-weight: bold;

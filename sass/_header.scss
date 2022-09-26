@@ -1,20 +1,31 @@
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$blueColor: #2196f3;
+$darkColor: #212121;
+$darkfooterColor: #2f303a;
+$greyColor: #AFB1B8;
+$darkgreyColor: #757575;
+$whitetransColor: #ffffff99;
+$lightgrayColor: #F5F4FA;
+
+
 .header__item {
     margin-right: 93px;
     font-weight: bold;
     font-size: 24px;
-    color: var(--black);
+    color: $blackColor;
 }
 
 .header__item     :hover {
-    color: var(--blue);
+    color: $blueColor;
 }
 
 .header__link {
-    color: var(--blue);
+    color: $blueColor;
 }
 
 .header__link:hover {
-    color: var(--black);
+    color: $blackColor;
 }
 
 
@@ -41,7 +52,7 @@
     justify-content: center;      
     letter-spacing: 0.02em;
     color: var(--blue);
-    transition: 250ms color var(--grey);
+    transition: 250ms color $greyColor;
     color: #2196F3;
     margin-top: 30px;
 }
@@ -55,7 +66,7 @@
     left: 0px;
     width: 100%;
     height: 3px;
-    background-color: var(--blue);
+    background-color: $blueColor;
 
 }
 
@@ -87,7 +98,7 @@
 }
 
 .header-contact__item:hover {
-    fill: var(--blue);
+    fill: $blueColor;
 }
 
 .header-contact__link {
@@ -97,23 +108,23 @@
     display: inline-flex;
 }
 
-.header-contact__link:hover svg { fill: var(--blue)} 
+.header-contact__link:hover svg { fill: $blueColor} 
 
 
 .header-contact__email {
     padding-right: 10px;
-    fill: var(--darkgrey);
+    fill: $darkgreyColor;
 }
 
 .header-contact__email:hover {
-    fill: var(--blue);
+    fill: $blueColor;
 }
 
 .header-contact__phone {
     padding-right: 10px;
-    fill: var(--grey);
+    fill: $greyColor;
 }
 
 .header-contact__phone:hover {
-    fill: var(--blue);
+    fill: $blueColor;
 }

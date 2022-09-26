@@ -1,4 +1,12 @@
-
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$blueColor: #2196f3;
+$darkColor: #212121;
+$darkfooterColor: #2f303a;
+$greyColor: #AFB1B8;
+$darkgreyColor: #757575;
+$whitetransColor: #ffffff99;
+$lightgrayColor: #F5F4FA;
 
 .backdrop {
     z-index: 1;
@@ -17,7 +25,7 @@
     width: 528px;
     min-height: 581px;
     transform: translate(-50%, -50%);
-    background-color: var(--white);
+    background-color: $whiteColor;
 }
 
 .modal__heading {
@@ -34,7 +42,7 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    background-color: var(--white);
+    background-color: $whiteColor;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
@@ -54,8 +62,8 @@
 }
 
 .input-wrapper:hover svg{
-    border-color: var(--blue);
-    fill: var(--blue);
+    border-color: $blueColor;
+    fill: $blueColor;
 }
 
 .form-modal-coment__label {
@@ -76,12 +84,12 @@
     margin-right: 40px;
     padding-left: 42px;
     border-radius: 5px;
-    border-color: var(--darkgrey);
+    border-color: $darkgreyColor;
     border: 0.5px solid;
 }
 
 .input-modal:hover {
-    border-color: var(--blue)
+    border-color: $blueColor;
 }
 
 .input-modal__svg-username {
@@ -104,7 +112,7 @@
 
 .input-modal__coment:hover {
     cursor: pointer;
-    border-color: var(--blue);
+    border-color: $blueColor;
 }
 
 
@@ -115,7 +123,7 @@
     padding-bottom: 100px;
     padding-left: 10px;
     border-radius: 5px;
-    border-color: var(--grey);
+    border-color: $greyColor;
     border: 0.5px solid;
 }
 
@@ -128,8 +136,8 @@
     cursor: pointer;
     width: 200px;
     height: 50px;
-    background-color: var(--blue);
-    color: var(--white);;
+    background-color: $blueColor;
+    color: $whiteColor;
     font-size: 16px;
     text-align: center;
     margin-top: 30px;

@@ -1,4 +1,4 @@
-/* :root {
+:root {
     --white: #ffffff;
     --black: #000000;
     --blue: #2196f3;
@@ -27,11 +27,11 @@ ul {
     padding-bottom: 94px;
 }
 
-
 .container {
     width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     flex-direction: column;
     background-color: var(--white);
@@ -55,12 +55,9 @@ a:hover {
 p {
     font-size: 12px;
     color: #757575;
-} */
+}
 
-/* index style */
-
-
-/* .header__item {
+.header__item {
     margin-right: 93px;
     font-weight: bold;
     font-size: 24px;
@@ -137,8 +134,6 @@ p {
     padding-bottom: 32px;
 }
 
-
-
 .header-contact__item {
     display: flex;
     flex-wrap: wrap;
@@ -178,10 +173,10 @@ p {
 
 .header-contact__phone:hover {
     fill: var(--blue);
-} */
+}
 
 
-/* .service-heading__background-photo {
+.service-heading__background-photo {
     height: 600px;
     width: auto;
     background-image: url(../images/zdjęciewtle.jpg);
@@ -237,9 +232,7 @@ p {
 
 .service-heading__button-text:hover {
     color: var(--darkfooter)
-} */
-
-/* 
+} 
 
 .backdrop {
     z-index: 1;
@@ -394,7 +387,7 @@ p {
 .cookies__link {
     text-decoration: underline;
     color: var(--blue)
-} */
+} 
 
 .index {
     margin-top: 94px;
@@ -559,11 +552,26 @@ p {
     fill: var(--white)
 }
 
-.customers__heading {
-    font-size: 36px;
-    text-align: center;
+
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--white);
+    padding-top: 94px;
+    max-width: 1200px;
     width: auto;
-    margin-top: 94px;
+}
+
+.customers__heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--white);
+    padding-top: 94px;
+    width: auto;
+    font-size: 44px;
 }
 
 .customers__list {
@@ -576,6 +584,7 @@ p {
 }
 
 .customer__card {
+    margin: 5px;
     display: flex;
     flex-wrap: wrap;
     width: 170px;
@@ -601,12 +610,16 @@ p {
     fill: var(--blue);
 }
 
-/* .footer {
+ .footer {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 50px;
-    height: 300px;
+    max-height: 300px;
+    height: auto;
     width: auto; 
     background-color: var(--darkfooter);
     justify-content: flex-start;
+
 }
 
 .footer-page {
@@ -730,17 +743,17 @@ p {
     color: var(--white);
     align-items: baseline;
     border-radius: 5px;
-} */
-
-
-/* Portfolio-styles */
+} 
 
 
 
 
 
 
-/* 
+
+
+
+
 .buttons__list {
 
     display: flex;
@@ -855,7 +868,7 @@ p {
 
 .portfolio__text {
     margin-left: 20px;
-} */
+}
 
 
 
