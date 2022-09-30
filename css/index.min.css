@@ -399,12 +399,25 @@ p {
   transition-duration: 0.5s;
 }
 
+.footer-social-media__circle {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  transition-duration: 0.5s;
+}
+
 .footer-social-media__circle:hover svg {
   fill: #ffffff;
 }
 
 .footer-social-media__circle:hover {
-  background-color: #000000;
+  background-color: #2196f3;
   fill: #ffffff;
   cursor: pointer;
 }
@@ -413,6 +426,7 @@ p {
   fill: #AFB1B8;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
+
 .footer-social-media__icon:hover {
   fill: #ffffff;
 }

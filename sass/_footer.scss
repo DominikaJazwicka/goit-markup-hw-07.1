@@ -1,14 +1,3 @@
-$whiteColor: #ffffff;
-$blackColor: #000000;
-$blueColor: #2196f3;
-$darkColor: #212121;
-$darkfooterColor: #2f303a;
-$greyColor: #AFB1B8;
-$darkgreyColor: #757575;
-$whitetransColor: #ffffff99;
-$lightgrayColor: #F5F4FA;
-
-
 
 .footer {
     display: flex;
@@ -19,14 +8,14 @@ $lightgrayColor: #F5F4FA;
     width: auto; 
     background-color: $darkfooterColor;
     justify-content: flex-start;
-}
 
-.footer-page {
+&-page {
     margin-top: 60px;
     font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 215px;
+}
 }
 
 .footer__list {
@@ -61,23 +50,24 @@ $lightgrayColor: #F5F4FA;
     background-color: none;
     transition-duration: 0.5s;
 }
-}
 
-.footer-social-media__circle:hover svg { fill: $whiteColor }
-
-.footer-social-media__circle:hover {
-    background-color: $blackColor;
+&:hover {
+    background-color: $blueColor;
     fill: $whiteColor;
     cursor: pointer;
 }
 
+& svg { fill: $whiteColor}
+ }
+
+
 .footer-social-media__icon {
     fill: $greyColor;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-
-&:hover {
-    fill: $whiteColor;
 }
+
+.footer-social-media__icon:hover {
+    fill: $whiteColor;
 }
 
 .footer__newsletter {
