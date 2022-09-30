@@ -1,21 +1,31 @@
+$whiteColor: #fff;
+$blackColor: #000000;
+$blueColor: #2196f3;
+$darkColor: #212121;
+$darkfooterColor: #2f303a;
+$greyColor: #AFB1B8;
+$darkgreyColor: #757575;
+$whitetransColor: #ffffff99;
+$lightgrayColor: #F5F4FA;
+
 
 .we-do {
     background-color: $whiteColor;
     padding-top: 94px;
     width: auto;
-}
 
-.we-do__heading {
+&__heading {
     margin-bottom: 50px;
     font-size: 36px;
     text-align: center;
     width: auto;
 }
 
-.we-do__list {
+&__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
 }
 
 .we-do__card {
@@ -54,9 +64,8 @@
     background-color: $whiteColor;
     padding-top: 94px;
     width: auto;
-}
 
-.employee__heading {
+&__heading {
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 36px;
@@ -64,12 +73,13 @@
     width: auto;
 }
 
-.employee__list {
+&__list {
     margin-bottom: 60px;
     justify-content: center;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+}
 }
 
 .employee__card {
@@ -93,9 +103,8 @@
 
 .employee-social-media {
     justify-content: space-evenly;
-}
 
-.employee-social-media__circle {
+&__circle {
     padding: 10px;
     margin-top: 20px;
     display: inline-flex;
@@ -106,6 +115,7 @@
     align-items: center;
     background-color: none;
     transition-duration: 0.5s;
+}
 }
 
 .employee-social-media__circle:hover svg { fill: $whiteColor }
@@ -119,12 +129,11 @@
 .employee-social-media__icon {
     fill: $greyColor;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
 
-.employee-social-media__icon:hover {
+&:hover {
     fill: $whiteColor;
 }
-
+}
 
 
 
@@ -136,9 +145,8 @@
     padding-top: 94px;
     max-width: 1200px;
     width: auto;
-}
 
-.customers__heading {
+    &__heading {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -147,14 +155,14 @@
     width: auto;
     font-size: 44px;
 }
-
-.customers__list {
+&__list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     margin-top: 50px;
     justify-content: space-around;
+}
 }
 
 .customer__card {
@@ -177,11 +185,11 @@
 .customer__svg {
     fill: $greyColor;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
 
-.customer__svg:hover {
+&:hover {
     cursor: pointer;
     fill: $blueColor;
+}
 }
 
 
@@ -194,13 +202,13 @@
     justify-content: center;
     width: auto;
     gap: 15px;
-}
 
-.index__element {
+&__element {
     width: auto;
     display: block;
     padding-left: 10px;
     padding-right: 10px;
+}
 }
 
 .index-element__svg {

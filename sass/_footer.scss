@@ -1,3 +1,12 @@
+$whiteColor: #fff;
+$blackColor: #000000;
+$blueColor: #2196f3;
+$darkColor: #212121;
+$darkfooterColor: #2f303a;
+$greyColor: #AFB1B8;
+$darkgreyColor: #757575;
+$whitetransColor: #ffffff99;
+$lightgrayColor: #F5F4FA;
 
 .footer {
     display: flex;
@@ -9,24 +18,27 @@
     background-color: $darkfooterColor;
     justify-content: flex-start;
 
-&-page {
+
+    &__list {
+    color: $whiteColor;
+    justify-content: flex-start
+}
+
+    &__element {
+    padding-bottom: 20px;
+    
+ }
+}
+
+.footer-page {
     margin-top: 60px;
     font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 215px;
 }
-}
 
-.footer__list {
-    color: $whiteColor;
-    justify-content: flex-start
-}
 
-.footer__element {
-    padding-bottom: 20px;
-    
- }
 
  .footer__join-us {
     justify-content: flex-start;
@@ -37,8 +49,9 @@
 
  .footer__social-media {
     justify-content: space-evenly;
+ }
 
-&__circle {
+.footer-social-media__circle {
     padding: 10px;
     margin-top: 20px;
     display: inline-flex;
@@ -51,23 +64,22 @@
     transition-duration: 0.5s;
 }
 
-&:hover {
+
+.footer-social-media__circle:hover {
     background-color: $blueColor;
     fill: $whiteColor;
     cursor: pointer;
-}
 
 & svg { fill: $whiteColor}
- }
-
+}
 
 .footer-social-media__icon {
     fill: $greyColor;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
 
-.footer-social-media__icon:hover {
+&:hover {
     fill: $whiteColor;
+}
 }
 
 .footer__newsletter {
@@ -75,12 +87,12 @@
     display: flex;
     color: $whiteColor;
     margin-left: 20px;
-}
 
-.footer__newsletter-text {
+&-text {
     font-size: 16px;
     margin-left: 78px;
     margin-bottom: 20px;
+}
 }
 
 .footer-input__newsletter {
@@ -97,11 +109,11 @@
     font-size: 16px;
     line-height: 1.25;
     margin-right: 12px;
-} 
 
-.footer-input__newsletter-icon {
+&-icon {
     padding-left: 24px;
     align-items: center;
+}
 }
 
 .footer__text {

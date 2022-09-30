@@ -1,9 +1,19 @@
+$whiteColor: #fff;
+$blackColor: #000000;
+$blueColor: #2196f3;
+$darkColor: #212121;
+$darkfooterColor: #2f303a;
+$greyColor: #AFB1B8;
+$darkgreyColor: #757575;
+$whitetransColor: #ffffff99;
+$lightgrayColor: #F5F4FA;
 
 .header {
     max-height: 80px;
     width: auto;
+}
 
-&__active {
+.header__active {
     justify-content: center;      
     letter-spacing: 0.02em;
     color: var(--blue);
@@ -12,7 +22,7 @@
     margin-top: 30px;
 
 
-&--after {
+&:after {
     position: relative;
     display: block;
     content: "";
@@ -24,7 +34,7 @@
     background-color: $blueColor;
 }
 }
-}
+
 
 .header__item {
     margin-right: 93px;
