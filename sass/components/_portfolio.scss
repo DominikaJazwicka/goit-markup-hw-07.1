@@ -51,13 +51,13 @@ $lightgrayColor: #F5F4FA;
     opacity: 90%;
     transform: translateY(100%);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
 
-& > p {
+.portfolio__overlay > p {
     color: $whiteColor;
     font-size: 16px;
     padding-left: 24px;
     padding-top: 50px;
-}
 }
 
 .portfolio__box:hover .portfolio__overlay {
