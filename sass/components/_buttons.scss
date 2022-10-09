@@ -1,12 +1,5 @@
-$whiteColor: #fff;
-$blackColor: #000000;
-$blueColor: #2196f3;
-$darkColor: #212121;
-$darkfooterColor: #2f303a;
-$greyColor: #AFB1B8;
-$darkgreyColor: #757575;
-$whitetransColor: #ffffff99;
-$lightgrayColor: #F5F4FA;
+@import "./utils/vars";
+
 
 .buttons__list {
 
@@ -30,23 +23,23 @@ $lightgrayColor: #F5F4FA;
     height: 38px;
     flex-direction: row;
     text-align: center;
-    background-color: $lightgrayColor;
+    background-color: getColor("lightgray");
     font-size: 16px; 
     border: none;
     border-radius: 5px;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 &:focus {
-    color: $blueColor;
+    color: getColor("blue");
 }
 
 &:hover {
     width: 121px;
     height: 38px;
     cursor: pointer;
-    background-color: $blueColor;
+    background-color: getColor("blue");
     border: none;
-    color: $whiteColor;
+    color: getColor("blue");
     text-align: center;
     text-decoration: none;
     display: inline-block;

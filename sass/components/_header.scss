@@ -1,12 +1,4 @@
-$whiteColor: #fff;
-$blackColor: #000000;
-$blueColor: #2196f3;
-$darkColor: #212121;
-$darkfooterColor: #2f303a;
-$greyColor: #AFB1B8;
-$darkgreyColor: #757575;
-$whitetransColor: #ffffff99;
-$lightgrayColor: #F5F4FA;
+@import "./utils/vars";
 
 .header {
     max-height: 80px;
@@ -17,7 +9,7 @@ $lightgrayColor: #F5F4FA;
     justify-content: center;      
     letter-spacing: 0.02em;
     color: var(--blue);
-    transition: 250ms color $greyColor;
+    transition: 250ms color getColor("grey");
     color: #2196F3;
     margin-top: 30px;
 
@@ -31,7 +23,7 @@ $lightgrayColor: #F5F4FA;
     left: 0px;
     width: 100%;
     height: 3px;
-    background-color: $blueColor;
+    background-color: getColor("blue");
 }
 }
 
@@ -40,18 +32,18 @@ $lightgrayColor: #F5F4FA;
     margin-right: 93px;
     font-weight: bold;
     font-size: 24px;
-    color: $blackColor;
+    color: getColor("black");
 
 &:hover {
-    color: $blueColor;
+    color: getColor("blue");
 }
 }
 
 .header__link {
-    color: $blueColor;
+    color: getColor("blue");
 
 &:hover {
-    color: $blackColor;
+    color: getColor("black");
 }
 }
 
@@ -103,7 +95,7 @@ $lightgrayColor: #F5F4FA;
     transition-duration: 0.5s;
 
 &:hover {
-    fill: $blueColor;
+    fill: getColor("blue");
 }
 }
 
@@ -114,22 +106,22 @@ $lightgrayColor: #F5F4FA;
     display: inline-flex;
 
 
-&:hover svg { fill: $blueColor} 
+&:hover svg { fill: getColor("blue")} 
 }
 
 .header-contact__email {
     padding-right: 10px;
-    fill: $darkgreyColor;
+    fill: getColor("dark");
 
 &:hover {
-    fill: $blueColor;
+    fill: getColor("blue");
 }
 }
 .header-contact__phone {
     padding-right: 10px;
-    fill: $greyColor;
+    fill: getColor("grey");
 
 &:hover {
-    fill: $blueColor;
+    fill: getColor("grey");
 }
 }

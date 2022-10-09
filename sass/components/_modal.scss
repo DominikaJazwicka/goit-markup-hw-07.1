@@ -1,12 +1,4 @@
-$whiteColor: #fff;
-$blackColor: #000000;
-$blueColor: #2196f3;
-$darkColor: #212121;
-$darkfooterColor: #2f303a;
-$greyColor: #AFB1B8;
-$darkgreyColor: #757575;
-$whitetransColor: #ffffff99;
-$lightgrayColor: #F5F4FA;
+@import "./utils/vars";
 
 .backdrop {
     z-index: 1;
@@ -25,7 +17,7 @@ $lightgrayColor: #F5F4FA;
     width: 528px;
     min-height: 581px;
     transform: translate(-50%, -50%);
-    background-color: $whiteColor;
+    background-color: getColor("white");
 
 &__heading {
     font-size: 20px;
@@ -42,7 +34,7 @@ $lightgrayColor: #F5F4FA;
     right: 8px;
     width: 30px;
     height: 30px;
-    background-color: $whiteColor;
+    background-color: getColor("white");
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
@@ -62,8 +54,8 @@ $lightgrayColor: #F5F4FA;
 }
 
 .input-wrapper:hover svg{
-    border-color: $blueColor;
-    fill: $blueColor;
+    border-color: getColor("blue");
+    fill: getColor("blue");
 }
 
 .form-modal-coment__label {
@@ -84,11 +76,11 @@ $lightgrayColor: #F5F4FA;
     margin-right: 40px;
     padding-left: 42px;
     border-radius: 5px;
-    border-color: $darkgreyColor;
+    border-color: getColor("darkgrey");
     border: 0.5px solid;
 
 &:hover {
-    border-color: $blueColor;
+    border-color: getColor("blue");
 }
 }
 
@@ -118,12 +110,12 @@ $lightgrayColor: #F5F4FA;
     padding-bottom: 100px;
     padding-left: 10px;
     border-radius: 5px;
-    border-color: $greyColor;
+    border-color: getColor("grey");
     border: 0.5px solid;
 
 &:hover {
     cursor: pointer;
-    border-color: $blueColor;
+    border-color: getColor("blue");
 }
 }
 
@@ -136,8 +128,8 @@ $lightgrayColor: #F5F4FA;
     cursor: pointer;
     width: 200px;
     height: 50px;
-    background-color: $blueColor;
-    color: $whiteColor;
+    background-color: getColor("blue");
+    color: getColor("blue");
     font-size: 16px;
     text-align: center;
     margin-top: 30px;
@@ -159,6 +151,6 @@ $lightgrayColor: #F5F4FA;
 
 &__link {
     text-decoration: underline;
-    color: $blueColor;
+    color: getColor("blue");
 }
 }

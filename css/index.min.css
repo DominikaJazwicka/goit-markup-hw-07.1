@@ -143,7 +143,7 @@ p {
 
 .header-contact__email {
   padding-right: 10px;
-  fill: #757575;
+  fill: #212121;
 }
 .header-contact__email:hover {
   fill: #2196f3;
@@ -154,7 +154,7 @@ p {
   fill: #AFB1B8;
 }
 .header-contact__phone:hover {
-  fill: #2196f3;
+  fill: #AFB1B8;
 }
 
 .backdrop {
@@ -280,7 +280,7 @@ p {
   width: 200px;
   height: 50px;
   background-color: #2196f3;
-  color: #fff;
+  color: #2196f3;
   font-size: 16px;
   text-align: center;
   margin-top: 30px;
@@ -440,8 +440,8 @@ p {
   margin-left: 78px;
   background-color: #212121;
   border: solid 2px;
-  border-color: var(--white);
-  color: var(--white);
+  border-color: #fff;
+  color: #fff;
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -794,7 +794,7 @@ p {
   cursor: pointer;
   background-color: #2196f3;
   border: none;
-  color: #fff;
+  color: #2196f3;
   text-align: center;
   text-decoration: none;
   display: inline-block;

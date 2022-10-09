@@ -1,17 +1,9 @@
-$whiteColor: #fff;
-$blackColor: #000000;
-$blueColor: #2196f3;
-$darkColor: #212121;
-$darkfooterColor: #2f303a;
-$greyColor: #AFB1B8;
-$darkgreyColor: #757575;
-$whitetransColor: #ffffff99;
-$lightgrayColor: #F5F4FA;
+@import "./utils/vars";
 
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: $whiteColor;
+    background-color: getColor("white");
 }
 
 * {
@@ -33,7 +25,7 @@ ul {
     display: flex;
     gap: 15px;
     flex-direction: column;
-    background-color: $whiteColor;
+    background-color: getColor("white");
 }
 
 .header {
@@ -48,10 +40,10 @@ a {
 }
 
 a:hover {
-    color: $blueColor;
+    color: getColor("blue");
 }
 
 p {
     font-size: 12px;
-    color: $darkColor;
+    color: getColor("dark");
 }

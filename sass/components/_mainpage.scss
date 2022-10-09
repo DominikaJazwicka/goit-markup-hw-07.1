@@ -1,16 +1,8 @@
-$whiteColor: #fff;
-$blackColor: #000000;
-$blueColor: #2196f3;
-$darkColor: #212121;
-$darkfooterColor: #2f303a;
-$greyColor: #AFB1B8;
-$darkgreyColor: #757575;
-$whitetransColor: #ffffff99;
-$lightgrayColor: #F5F4FA;
+@import "./utils/vars";
 
 
 .we-do {
-    background-color: $whiteColor;
+    background-color: getColor("white");
     padding-top: 94px;
     width: auto;
 
@@ -43,9 +35,9 @@ $lightgrayColor: #F5F4FA;
     left: 0;
     width: 100%;
     height: 50%;
-    background-color: $blackColor;
+    background-color: getColor("black");
     opacity: 70%;
-    color: $whiteColor;
+    color: getColor("white");
     text-align: center;
     padding-top: 40px;
     margin-top: 180px;
@@ -61,7 +53,7 @@ $lightgrayColor: #F5F4FA;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: $whiteColor;
+    background-color: getColor("white");
     padding-top: 94px;
     width: auto;
 
@@ -118,20 +110,20 @@ $lightgrayColor: #F5F4FA;
 }
 }
 
-.employee-social-media__circle:hover svg { fill: $whiteColor }
+.employee-social-media__circle:hover svg { fill: getColor("white") }
 
 .employee-social-media__circle:hover {
-    background-color: $blueColor;
-    fill: $whiteColor;
+    background-color: getColor("blue");
+    fill: getColor("white");
     cursor: pointer;
 }
 
 .employee-social-media__icon {
-    fill: $greyColor;
+    fill: getColor("grey");
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 &:hover {
-    fill: $whiteColor;
+    fill: getColor("white");
 }
 }
 
@@ -141,7 +133,7 @@ $lightgrayColor: #F5F4FA;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: $whiteColor;
+    background-color: getColor("white");
     padding-top: 94px;
     max-width: 1200px;
     width: auto;
@@ -150,7 +142,7 @@ $lightgrayColor: #F5F4FA;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: $whiteColor;
+    background-color: getColor("white");
     padding-top: 94px;
     width: auto;
     font-size: 44px;
@@ -172,23 +164,23 @@ $lightgrayColor: #F5F4FA;
     width: 170px;
     height: 92px;
     border: 1px solid;
-    border-color: $greyColor;
+    border-color: getColor("grey");
     border-radius: 5px;
 }
 
-.customer__card:hover svg { fill: $blueColor } 
+.customer__card:hover svg { fill: getColor("blue"); } 
 
 .customer__card:hover {
-    border-color: $blueColor;
+    border-color: getColor("blue");
 }
 
 .customer__svg {
-    fill: $greyColor;
+    fill: getColor("grey");
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 &:hover {
     cursor: pointer;
-    fill: $blueColor;
+    fill: getColor("blue");
 }
 }
 
@@ -214,7 +206,7 @@ $lightgrayColor: #F5F4FA;
 .index-element__svg {
     width: 250px;
     height: 110px;
-    background-color: $lightgrayColor;
+    background-color: getColor("lightgray");
     border-radius: 5px;
     justify-content: center;
     display: flex;

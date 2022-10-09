@@ -1,12 +1,4 @@
-$whiteColor: #fff;
-$blackColor: #000000;
-$blueColor: #2196f3;
-$darkColor: #212121;
-$darkfooterColor: #2f303a;
-$greyColor: #AFB1B8;
-$darkgreyColor: #757575;
-$whitetransColor: #ffffff99;
-$lightgrayColor: #F5F4FA;
+@import "./utils/vars";
 
 .footer {
     display: flex;
@@ -15,12 +7,12 @@ $lightgrayColor: #F5F4FA;
     max-height: 300px;
     height: auto;
     width: auto; 
-    background-color: $darkfooterColor;
+    background-color: getColor("darkfooter");
     justify-content: flex-start;
 
 
     &__list {
-    color: $whiteColor;
+    color: getColor("white");
     justify-content: flex-start
 }
 
@@ -43,7 +35,7 @@ $lightgrayColor: #F5F4FA;
  .footer__join-us {
     justify-content: flex-start;
     display: flex;
-    color: $whiteColor;
+    color: getColor("white");
     margin-left: 20px;
 }
 
@@ -66,26 +58,26 @@ $lightgrayColor: #F5F4FA;
 
 
 .footer-social-media__circle:hover {
-    background-color: $blueColor;
-    fill: $whiteColor;
+    background-color: getColor("blue");
+    fill: getColor("white");
     cursor: pointer;
 
-& svg { fill: $whiteColor}
+& svg { fill: getColor("white");}
 }
 
 .footer-social-media__icon {
-    fill: $greyColor;
+    fill: getColor("grey");
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 &:hover {
-    fill: $whiteColor;
+    fill: getColor("white");
 }
 }
 
 .footer__newsletter {
     justify-content: flex-start;
     display: flex;
-    color: $whiteColor;
+    color: getColor("white");
     margin-left: 20px;
 
 &-text {
@@ -101,10 +93,10 @@ $lightgrayColor: #F5F4FA;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     margin-left: 78px;
-    background-color: $darkColor;
+    background-color: getColor("dark");
     border: solid 2px;
-    border-color: var(--white);
-    color: var(--white);
+    border-color: getColor("white");
+    color: getColor("white");
     padding-left: 16px;
     font-size: 16px;
     line-height: 1.25;
@@ -117,17 +109,17 @@ $lightgrayColor: #F5F4FA;
 }
 
 .footer__text {
-    color: $blueColor;
+    color: getColor("blue");
 }
 
 .join-us {
     padding: 15px;
     font-size: 16px;
-    color: $whiteColor;
+    color: getColor("white");
 }
 
 .footer__link {
-    color: $whiteColor;
+    color: getColor("white");
 }
 
 .newsletter {
@@ -137,11 +129,11 @@ $lightgrayColor: #F5F4FA;
 .footer__button {
     height: 50px;
     width: 200px;
-    background-color: $blueColor;
+    background-color: getColor("blue");
     border: none;
     font-size: 16px;
     font-weight: bold;
-    color: $whiteColor;
+    color: getColor("white");
     align-items: baseline;
     border-radius: 5px;
 } 
